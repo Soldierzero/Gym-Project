@@ -7,7 +7,8 @@
 const membershipTypes = ["Basic", "Plus", "Elite", "Student", "Family"];
 
 const yearEl = document.getElementById("year");
-yearEl.textContent = String(new Date().getFullYear());
+if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
 
 const form = document.getElementById("regForm");
 const resultBox = document.getElementById("resultBox");
